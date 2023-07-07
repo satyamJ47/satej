@@ -1,0 +1,169 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    display: flex;
+    justify-content: center;
+    
+}
+
+h2{
+    color: #222;
+    font-size: 6em;
+    font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes letter{
+    0%{
+        color:#fff;
+        text-shadow: 0 0 0px #fff,0 0 5px #fff;
+    }
+    15%{
+        color:#fff;
+        text-shadow: 0 0 5px #fff,0 0 10px #fff;
+    }
+    30%{
+        color:#fff;
+        text-shadow: 0 0 10px #fff,0 0 15px #fff;
+    }
+    40%{
+        color:#fff;
+        text-shadow: 0 0 15px #fff,0 0 25px #fff;
+    }
+    50%{
+        color:#fff;
+        text-shadow: 0 0 25px #fff,0 0 40px #fff;
+    }
+    60%{
+        color:#fff;
+        text-shadow: 0 0 15px #fff,0 0 25px #fff;
+    }
+    70%{
+        color:#fff;
+        text-shadow: 0 0 10px #fff,0 0 15px #fff;
+    }
+    85%{
+        color:#fff;
+        text-shadow: 0 0 5px #fff,0 0 10px #fff;
+    }
+    100%{
+        color:#fff;
+        text-shadow: 0 0 0px #fff,0 0 5px #fff;
+    }
+}
+
+@keyframes flash{
+    0%{
+        color:#1bfce9;
+        text-shadow: 0 0 0px #1bfce9,0 0 5px #1bfce9;;
+    }
+    20%{
+        color:#d7f721;
+        text-shadow: 0 0 5px #d7f721,0 0 15px #d7f721;;
+    }
+    40%{
+        color:#d7f721;
+        text-shadow: 0 0 15px #d7f721,0 0 35px #d7f721;;
+    }
+    50%{
+        color:#1bfce9;
+        text-shadow: 0 0 35px #1bfce9,0 0 50px #1bfce9;;
+    }
+    60%{
+        color:#d7f721;
+        text-shadow: 0 0 15px #d7f721,0 0 35px #d7f721;;
+    }
+    80%{
+        color:#d7f721;
+        text-shadow: 0 0 5px #d7f721,0 0 15px #fc481b;;
+    }
+    100%{
+        color:#f7d021;;
+        text-shadow: 0 0 0px #fc481b,0 0 5px #fc481b;;
+    }
+}
+
+@keyframes flashMid{
+    0%{
+        color:#fc481b;
+        text-shadow: 0 0 0px #fc481b,0 0 5px #fc481b;;
+    }
+    20%{
+        color:#d7f721;
+        text-shadow: 0 0 5px #d7f721,0 0 15px #d7f721;;
+    }
+    40%{
+        color:#d7f721;
+        text-shadow: 0 0 15px #d7f721,0 0 35px #d7f721;;
+    }
+    50%{
+        color:#1bfce9;
+        text-shadow: 0 0 35px #1bfce9,0 0 50px #1bfce9;;
+    }
+    60%{
+        color:#d7f721;
+        text-shadow: 0 0 15px #d7f721,0 0 35px #d7f721;;
+    }
+    80%{
+        color:#d7f721;
+        text-shadow: 0 0 5px #d7f721,0 0 15px #fc481b;;
+    }
+    100%{
+        color:#fc481b;;
+        text-shadow: 0 0 0px #fc481b,0 0 5px #fc481b;;
+    }
+}
+
+@keyframes tej{
+    
+    0%{
+        color: #1afda6;
+        text-shadow: 0 0 0px #1afda6,0 0 5px #1afda6;
+    }
+    20%{
+        color: #1afd79;
+        text-shadow: 0 0 10px #1afd79,0 0 15px #1afd79;
+    }
+    40%{
+        color: #fdf91a;
+        text-shadow: 0 0 30px #fdf91a,0 0 35px #fdf91a;
+    }
+    60%{
+        color: #fdf91a;
+        text-shadow: 0 0 40px #1afdea,0 0 45px #1afdea;
+    }
+    80%{
+        color: #1afdea;
+        text-shadow: 0 0 0px #1afdea,0 0 5px #1afdea;
+    }
+    100%{
+        color: #fd1a4b;
+        text-shadow: 0 0 10px #fd1a4b,0 0 15px #fd1a4b;
+    }
+}
+
+@keyframes blackout{
+    0%{color: #000;}
+    100%{color: #000;}
+}
+
+h2:hover span:nth-child(1){
+    animation: letter 1s 1,blackout 10s 3.7s;
+}
+h2:hover span:nth-child(2){
+    animation: letter 1s 0.6s,blackout 10s 3.7s;
+}
+h2:hover span:nth-child(3){
+    animation: letter 1s 1.2s,flash 0.1s 3.4s,blackout 0.7s 3.7s ,tej 2s 4.7s,blackout 10s 6.7s;
+}
+h2:hover span:nth-child(4){
+    animation: letter 1s 1.8s,flashMid 0.2s 3.5s,blackout 0.7s 3.7s ,tej 2s 4.4s,blackout 10s 6.5s;
+}
+h2:hover span:nth-child(5){
+    animation: letter 1s 2.4s,flash 0.1s 3.4s,blackout 0.7s 3.7s ,tej 2s 4.7s,blackout 10s 6.7s;
+}
